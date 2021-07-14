@@ -1,0 +1,40 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+.container{
+    background-color: #2D25A0;
+    padding:3rem 5rem;
+}
+
+.football{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.banner-title{
+    /* width:458px;
+    height:230px; */
+    /* margin:207px 102px 240px 156px; */
+    font-weight:700;
+    color:#FFFFFF;
+    font-size:64px;
+}
+button{
+    background-color: #E02C6D;
+    color:#FFFFFF;
+   padding: 1.2em 1.6em 1.2em 1.6em;
+}
+.banner img{
+    width: 556.01px;
+    height:438px;
+
+    /* margin-top:153px;
+    margin-right: 140px; */
+    /* margin-bottom:86px; */
+    
+}
