@@ -4,11 +4,21 @@
 /* common styles or utilities */
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #F3F1FF;
+    
+}
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10rem 0 10rem ;
 }
 .container{
     background-color: #2D25A0;
     padding:3rem 5rem;
+}
+.banner:hover img {
+    transform: scale(1.5) rotate(360deg);
+    transition: transform 5s ease-in-out;
 }
 
 .football{
@@ -27,14 +37,118 @@ body{
 button{
     background-color: #E02C6D;
     color:#FFFFFF;
-   padding: 1.2em 1.6em 1.2em 1.6em;
+    border:none;
+    outline: none;
+   padding: 1.2rem 3rem;
 }
 .banner img{
     width: 556.01px;
     height:438px;
-
-    /* margin-top:153px;
-    margin-right: 140px; */
-    /* margin-bottom:86px; */
     
 }
+/* player item */
+.player-list{
+    margin-top:85px;
+    background-color: #f7f5f5;
+}
+.players{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+   
+
+}
+.player{
+    border:1px solid lightgray;
+    padding:.7rem;
+    margin:.5rem;
+    border-radius: 3px;
+   background-color: white;
+    
+}
+.player .thumbnail img{
+    width:100%;
+    /* height:256px; */
+    /* padding:19px; */
+} 
+
+
+/* highlights start */
+.container1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+ }
+ /* .highlights-title .highlights-info{
+     margin-top:30px;
+ } */
+.highlights-title{
+     font-weight: 700;
+     font-size:48px;
+    
+ }
+ .highlights-info{
+     font-weight: 404px;
+     font-size: 16px;
+     color:#6C6C6C;
+ }
+ .highlights-image{
+   margin-top:24px;
+ }
+ .highlights-image img{
+     width:567px;
+     height: 427px;
+ }
+
+ /* footer starts */
+ 
+footer{
+    text-align: center;
+}
+.footer-logo img{
+    height:100px;
+    background-color: white;
+
+}
+.icon a{
+    margin:auto;
+    height: 25px;
+    width: 25px;
+    padding:.3rem;
+    background-color: #c5c5c5;
+    border-radius: 50%;
+}
+li{
+    list-style: none;
+   display:inline-flex;
+   padding:0.5rem;
+}
+.copyright{
+    font-weight:400;
+    padding-left:2rem;
+}
+
+/* media query starts */
+
+/* Mobile Devices Starts*/
+@media only screen and (max-width:688px) {
+    .container, .player-list, .container1, .footer-layout{
+        width:100%;
+    }
+   
+     .football,.players, .highlights, .footer-logo{
+        background-color: red;
+        grid-template-columns: repeat(1,1fr);
+    }
+                .banner-title, .thumbnail,.highlights, .footer-logo{
+        flex-direction: column;
+    
+    }
+    
+}
+/* Mobile Devices Ends*/
+/* media query ends */
+
+/*  am unable to complete the media query . i am sorry */
